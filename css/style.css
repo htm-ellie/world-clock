@@ -1,0 +1,17 @@
+.container {
+  background: #ebe2c7;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+select {
+  color: #f9c34b;
+}
+
+footer {
+  text-align: center;
+  font-family: tahoma;
+  font-size: 13px;
+}
