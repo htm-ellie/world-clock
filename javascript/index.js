@@ -25,15 +25,15 @@ function updateTime() {
     );
   }
 
-  //Honolulu
-  let honoElement = document.querySelector("#honolulu");
-  if (honoElement) {
-    let honoDateElement = honoElement.querySelector(".date");
-    let honoTimeElement = honoElement.querySelector(".time");
-    let honoTime = moment().tz("Pacific/Honolulu");
+  //Sydney
+  let sydElement = document.querySelector("#sydney");
+  if (sydElement) {
+    let sydDateElement = sydElement.querySelector(".date");
+    let sydTimeElement = sydElement.querySelector(".time");
+    let sydTime = moment().tz("Australia/Sydney");
 
-    honoDateElement.innerHTML = honoTime.format("MMMM Do, YYYY");
-    honoTimeElement.innerHTML = honoTime.format("h:mm:ss [<small>]A[</small>]");
+    sydDateElement.innerHTML = sydTime.format("MMMM Do, YYYY");
+    sydTimeElement.innerHTML = sydTime.format("h:mm:ss [<small>]A[</small>]");
   }
 }
 function updateCity(event) {
