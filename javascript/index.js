@@ -24,6 +24,17 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  //Honolulu
+  let honoElement = document.querySelector("#honolulu");
+  if (honoElement) {
+    let honoDateElement = honoElement.querySelector(".date");
+    let honoTimeElement = honoElement.querySelector(".time");
+    let honoTime = moment().tz("Pacific/Honolulu");
+
+    honoDateElement.innerHTML = honoTime.format("MMMM Do, YYYY");
+    honoTimeElement.innerHTML = honoTime.format("h:mm:ss [<small>]A[</small>]");
+  }
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
